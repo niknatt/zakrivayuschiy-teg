@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: "Inter";
+  --accent-font-family: "Press Start 2P";
+  --weight-card-text: 400;
+  --weight-card-title: 700;
+  --main-color: #000;
+  --background-color: #fff;
+  --accent-fill-color: #ff0000;
+  --background-image: url(../svg/pattern-light.svg);
+  --section-size: clamp(23.19rem, calc(15.95rem + 30.89vw), 43.75rem);
+  --logo-font-size: clamp(3.06rem, calc(2.71rem + 1.5vw), 4.06rem);
+  --title-font-size: clamp(0.88rem, calc(0.68rem + 0.85vw), 1.44rem);
+}
+
+@media (width <= 375px) {
+  :root {
+    --section-size: 100%;
+  }
+}
